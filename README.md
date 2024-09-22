@@ -78,4 +78,13 @@ def my_handler(sender, instance, **kwargs):
 https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934edfb7174d6/myproject/myapp/signals.py#L7
 https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934edfb7174d6/myproject/myapp/models.py#L4
 https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934edfb7174d6/myproject/myproject/settings.py#L33
+![Screenshot from 2024-09-22 19-02-46](https://github.com/user-attachments/assets/32726d7f-2426-4c73-b2e9-64a3380da883)
+
+![Screenshot from 2024-09-22 19-02-16](https://github.com/user-attachments/assets/8cb51da4-a1ba-47d4-8df9-f578c56bf481)
+
+![Screenshot from 2024-09-22 19-01-54](https://github.com/user-attachments/assets/196342d4-7a42-4a61-90fe-d9bff232a2f3)
+
+
+
+
 
