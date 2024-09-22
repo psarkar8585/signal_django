@@ -88,3 +88,33 @@ https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934
 
 
 
+Topic: Custom Classes in Python
+
+Description: You are tasked with creating a Rectangle class with the following requirements:
+
+An instance of the Rectangle class requires length:int and width:int to be initialized.
+We can iterate over an instance of the Rectangle class 
+When an instance of the Rectangle class is iterated over, we first get its length in the format: {'length': <VALUE_OF_LENGTH>} followed by the width {width: <VALUE_OF_WIDTH>}
+
+
+#Rectabgle class declear
+#Rectangle class create
+class Rectangle:
+    def __init__(self, length: int, width: int):
+        self.length = length
+        self.width = width
+    #
+    def __iter__(self):
+        yield f"Length: {self.length}"
+        yield f"Width: {self.width}"
+
+# Example usage
+if __name__ == "__main__":
+    #user input 
+    a = int(input("enter 1st value : "))
+    b = int(input("enter 2nd value : "))
+    rect = Rectangle(a, b)
+    for dimension in rect:
+        print(dimension)
+![Screenshot from 2024-09-22 19-38-20](https://github.com/user-attachments/assets/8983ab6a-b3b6-4f65-a4a0-a2740fd7f715)
+
