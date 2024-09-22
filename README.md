@@ -22,4 +22,5 @@ from myapp.models import MyModel
 def my_handler(sender, instance, **kwargs):
     print("Signal received!")
 https://github.com/psarkar8585/signal_django/blob/b3e81e6603655437eaa2ef7f2fcbdc16cadd500e/myproject/myapp/signals.py#L1
-![Screenshot from 2024-09-22 18-21-20](https://github.com/user-attachments/assets/96c38d99-21c7-4af6-b6a5-5147c7bc01b1)
+
+![Screenshot from 2024-09-22 18-24-09](https://github.com/user-attachments/assets/3aecddee-f4f9-406a-b67a-0b01d817f8ad)
