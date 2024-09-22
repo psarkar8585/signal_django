@@ -4,7 +4,7 @@
 Question 1: By default are django signals executed synchronously or asynchronously? Please support your answer with a code snippet that conclusively proves your stance. The code does not need to be elegant and production ready, we just need to understand your logic.
 
 
-By default, Django signals are executed **synchronously**. This means when a signal is triggered, the code connected to the signal runs in the same process and thread as the code that triggered it.
+Answer: By default, Django signals are executed **synchronously**. This means when a signal is triggered, the code connected to the signal runs in the same process and thread as the code that triggered it.
 
 *Code Example:*
 #import post_save, receiver and MyModel
@@ -24,3 +24,9 @@ def my_handler(sender, instance, **kwargs):
 https://github.com/psarkar8585/signal_django/blob/b3e81e6603655437eaa2ef7f2fcbdc16cadd500e/myproject/myapp/signals.py#L1
 
 ![Screenshot from 2024-09-22 18-24-09](https://github.com/user-attachments/assets/3aecddee-f4f9-406a-b67a-0b01d817f8ad)
+
+
+
+
+Question 2: Do Django signals run in the same thread as the caller?
+Answer: Yes, by default, Django signals run in the **same thread** as the caller, meaning that if the signal is triggered in the main thread, the connected handler runs in that same thread.
