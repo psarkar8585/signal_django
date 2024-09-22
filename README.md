@@ -75,3 +75,7 @@ def my_handler(sender, instance, **kwargs):
 
 # Saving the model will trigger the handler, but raising an exception will cause a rollback.
 
+https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934edfb7174d6/myproject/myapp/signals.py#L7
+https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934edfb7174d6/myproject/myapp/models.py#L4
+https://github.com/psarkar8585/signal_django/blob/5c23fbc946d82aad89185733e25934edfb7174d6/myproject/myproject/settings.py#L33
+
