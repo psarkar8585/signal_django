@@ -118,4 +118,5 @@ if __name__ == "__main__":
         print(dimension)
 ![Screenshot from 2024-09-22 19-38-20](https://github.com/user-attachments/assets/8983ab6a-b3b6-4f65-a4a0-a2740fd7f715)
 Rectangle.py
+https://github.com/psarkar8585/signal_django/blob/53b373f2be8843a692dd89b6ca8e6c4ad71c39c8/Rectangle.py#L1
 
