@@ -51,3 +51,27 @@ https://github.com/psarkar8585/signal_django/blob/08077979a7207f368e1279d8081c6f
 
 
 ![Screenshot from 2024-09-22 18-46-24](https://github.com/user-attachments/assets/34b20234-7ed2-45ef-b74e-f7fb246ab33b)
+
+
+
+
+
+Question 3: Do Django signals run in the same database transaction as the caller?
+
+
+Answer: Yes, by default, Django signals (e.g., post_save) are run in the **same transaction** as the caller. This means if a signal handler fails or raises an exception, the database transaction will be rolled back.
+
+
+*Code Example: *
+python
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from myapp.models import MyModel
+
+@receiver(post_save, sender=MyModel)
+def my_handler(sender, instance, **kwargs):
+    print("Signal in same transaction!")
+    raise Exception("Rolling back transaction!")
+
+# Saving the model will trigger the handler, but raising an exception will cause a rollback.
+
