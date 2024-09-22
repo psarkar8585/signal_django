@@ -7,3 +7,4 @@ from .models import MyModel
 def my_handler(sender, instance, created, **kwargs):
     if created:
         print(f"Signal received! A new instance of MyModel was created: {instance.name}")
+        raise Exception ("Rolling Back transaction!")
